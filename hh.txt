@@ -1,0 +1,28 @@
+echo "1) Display the Jenkins Jobs"
+echo "2) Build the job"
+echo "3) Delete the Job"
+echo "4) Delete the Node"
+echo "5) Create the Job"
+
+
+echo "Please select the option which you want to perfom "
+
+read option
+
+case $option in
+	
+	1) sh displayJobs.sh
+	;;
+	2) sh buildJob.sh
+	;;
+	3) sh deleteJob.sh
+	;;
+	4) sh deleteNode.sh
+	;;
+	5) sh createJob.sh
+	;;
+	*) 
+	echo "Please type the correct input"
+	;;
+	
+esac
